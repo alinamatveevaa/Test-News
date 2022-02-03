@@ -1,0 +1,48 @@
+.section {
+    position: relative;
+}
+
+.newsItem:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.newsTitle {
+    margin-bottom: 20px;
+    font-size: 30px;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.newsDate {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.newsContent {
+    max-width: 900px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.deleteBtn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 0px 15px 4px rgb(102 96 96 / 26%);
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background-color: rgb(102 96 96 / 26%);
+    box-shadow: none;
+}

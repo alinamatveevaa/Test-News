@@ -1,0 +1,28 @@
+.newsItem:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.newsTitle {
+    margin-bottom: 20px;
+    font-size: 30px;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.newsTitle:hover {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.newsDate {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.newsDescr {
+    max-width: 900px;
+    font-size: 16px;
+    line-height: 30px;
+}
