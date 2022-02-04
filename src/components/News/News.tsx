@@ -1,17 +1,16 @@
-import { INews } from '../../redux/actions';
+// @ts-ignore
+import  {useSelector}  from 'react-redux';
+import { INews, RootState } from '../../redux/actions';
 import { Item } from './Item/Item';
-import {v4 as uuidv4} from 'uuid';
 
-interface INewsData {
-    data: INews[]
-}
-
-export function News({data}: INewsData) {
+export function News() {
+    const news = useSelector<RootState, INews[]>(state => state.news);
+    
     return (
         <section>
             <ul>
-                {data.map((item: INews) => {
-                    return <Item key={uuidv4()} data={item} />
+                {news.map((item: INews, index: number) => {
+                    return <Item key={item.url} index={index} data={item} />
                 })}
             </ul>
         </section>

@@ -9,10 +9,10 @@ export const formatDate = (element: Date) => {
     let year = element.getFullYear();
 
     const newDate = {
-        day:  `${day}`,
-        month: `${month}`,
-        date: `${date}`,
-        year: `${year}`,
+        day:  day,
+        month: month,
+        date: date,
+        year: year,
     }
 
     return newDate;
